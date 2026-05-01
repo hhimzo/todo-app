@@ -1,0 +1,8 @@
+import '../entities/category.dart';
+
+abstract class CategoryRepository {
+  Stream<List<Category>> watchAllCategories();
+  Future<void> createCategory(Category category);
+  Future<void> updateCategory(Category category);
+  Future<void> deleteCategory(String id);
+}
